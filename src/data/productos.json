@@ -1,0 +1,49 @@
+[
+  {
+    "id": 5,
+    "title": "Nuevo nombre de producto2",
+    "description": "Nueva descripción",
+    "price": 29.99,
+    "thumbnail": "nueva_imagen.jpg",
+    "code": "NEWCODE",
+    "stock": 75
+  },
+  {
+    "id": 6,
+    "title": "Producto 6",
+    "description": "Descripción 6",
+    "price": 16,
+    "thumbnail": "imagen6.jpg",
+    "code": "PC006",
+    "stock": 306
+  },
+  {
+    "id": 7,
+    "title": "Producto actualizado",
+    "description": "Descripción actualizada",
+    "price": 19.99,
+    "thumbnail": "nueva_imagen.jpg",
+    "code": "TEST02",
+    "stock": 100
+  },
+  {
+    "id": 2023112608,
+    "title": "Nuevo nombre de producto2",
+    "description": "Nueva descripción",
+    "price": 29.99,
+    "thumbnail": "nueva_imagen.jpg",
+    "code": "NEWCODE2",
+    "stock": 75
+  },
+  {
+    "id": 2023112609,
+    "title": "Nuevo nombre de producto2",
+    "description": "Nueva descripción",
+    "code": "NEWCODE3",
+    "price": 29.99,
+    "status": true,
+    "stock": 75,
+    "category": "nueva categoria",
+    "thumbnail": "nueva_imagen.jpg"
+  }
+]
