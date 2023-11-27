@@ -32,12 +32,11 @@ class CartsManager {
         if (carts.length === 0) {
             newCart = { id: 1, products: [] };
         } else {
-            newCart = { id: carts.length + 1, products: [] };
+            newCart = { id: this.generaIdcompuesto(carts.length), products: [] };
         }
 
         carts.push(newCart);
         const results = await fs.promises.writeFile(this.path, JSON.stringify(carts, null, 2), 'utf-8');
-
         return results;
     };
 
@@ -69,6 +68,16 @@ class CartsManager {
     getCars() {
         return this.carts;
     }
+
+    generaIdcompuesto(largo) {
+        const now = new Date();
+        const year = now.getFullYear();
+        const month = now.getMonth() + 1;
+        const day = now.getDate();
+        const idCorrelative = largo + 1 ;
+        const combinedId = year * 1000000 + month * 10000 + day * 100 + idCorrelative;
+        return combinedId;
+      }
 
 }
 

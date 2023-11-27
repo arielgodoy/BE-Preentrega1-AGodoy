@@ -61,9 +61,7 @@ class ProductManager {
     }
   }
 
-  updateProduct(id, updatedProduct) {
-    console.log(id);
-    console.log(updatedProduct);
+  updateProduct(id, updatedProduct) {    
     const index = this.products.findIndex((product) => product.id === id);
 
     if (index !== -1) {
