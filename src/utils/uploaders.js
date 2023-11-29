@@ -4,7 +4,9 @@ const path = require('path');
 const storage = multer.diskStorage({
     destination: function (req, file, cb) {
       // Especifica el directorio donde se guardarán las imágenes
-      cb(null, 'src/public/uploads/');
+      console.log(__dirname)
+      cb(null, __dirname + '/.././public/uploads/');      
+      
     },
     filename: function (req, file, cb) {
       // Genera un nombre de archivo único basado en la marca de tiempo actual
