@@ -1,5 +1,5 @@
-const { Router } = require('express');
-const ProductManager = require('../managers/ProductManager.js');
+import { Router } from 'express';
+import ProductManager from '../managers/ProductManager.js';
 const productManager = new ProductManager('./src/data/productos.json');
 const router = Router();
 
@@ -73,6 +73,6 @@ router
     })
 
 
+export default router;
 
 
-module.exports = router;

@@ -1,4 +1,4 @@
-const fs = require('node:fs')
+import fs from 'fs';
 
 class CartsManager {
     constructor(path) {
@@ -83,4 +83,5 @@ class CartsManager {
 
 //const carritomanager = new CartsManager('.././data/carts.json');
 //carritomanager.createCart();
-module.exports = CartsManager
+//module.exports = CartsManager
+export default CartsManager;

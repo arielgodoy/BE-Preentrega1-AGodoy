@@ -1,7 +1,9 @@
-const { Router } = require('express');
-const CartsManager = require('../managers/CartManager.js');
+import { Router } from 'express';
+//const CartsManager = require('../managers/CartManager.js');
+import CartsManager from '../managers/CartManager.js';
 const cartsService = new CartsManager('./src/data/carts.json');
 const router = Router();
+
 
 const middle_ware = (req,res,next)=>{
   req.user='Esteseriaelusuario';
@@ -9,7 +11,7 @@ const middle_ware = (req,res,next)=>{
   next();
 }
 
-router
+ router
 
   // agregamos el midel_ware de prueba
   .get('/',middle_ware, async (req, res) => {
@@ -93,5 +95,5 @@ router
     }
   });
 
-module.exports = router;
 
+export { router as default }; 
