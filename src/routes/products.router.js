@@ -5,8 +5,7 @@ const router = Router();
 
 router
     .get('/', async (req, res) => {
-        try {
-            await productManager.readFromFile();
+        try {            
             const limit = parseInt(req.query.limit);
             const allProducts = await productManager.getProducts();
 
@@ -24,10 +23,8 @@ router
 
     .get('/:pid', async (req, res) => {
         const id = parseInt(req.params.pid);
-        try {
-            await productManager.readFromFile();
+        try {            
             const producto = productManager.getProductById(id);
-
             if (producto) {
                 res.json(producto);
             } else {
@@ -46,9 +43,7 @@ router
         if (isNaN(productId)) {
             return res.status(400).json({ error: 'ID no válido.' });
         }
-
         const updatedProductData = req.body;
-
         productManager.updateProduct(productId, updatedProductData);
         res.json({ message: `Producto con ID ${productId} actualizado con éxito.` });
     })

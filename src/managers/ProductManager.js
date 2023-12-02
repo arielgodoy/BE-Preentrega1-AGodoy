@@ -96,14 +96,17 @@ class ProductManager {
   }
 
   getProducts() {
+    this.readFromFile();
     return this.products;
   }
 
   getProductById(id) {
+    this.readFromFile();
     return this.products.find((product) => product.id === id);
   }
 
   getProductByCode(code) {
+    this.readFromFile();
     return this.products.some((product) => product.code === code);
   }
 
