@@ -43,6 +43,9 @@ io.on('connection',socket=>{
             formData.status,
             formData.category);        
         socket.emit('resultado.addproduct',status)
+        socket.broadcast.emit('productosactualizados',status       
+        
+        );
         })
     socket.on('getproducts',limit =>{
         console.log("Data solicitada por getProducts "+ limit);
@@ -52,7 +55,8 @@ io.on('connection',socket=>{
     socket.on('eliminaProducto',id =>{
             console.log("Eliminando Producto ID = "+ id);
             let resultado=productManager.deleteProduct(id);
-            socket.emit('resultado.eliminaproducto',resultado);
+            //socket.emit('resultado.eliminaproducto',resultado);
+            socket.broadcast.emit('productosactualizados',resultado);
             });
 
     

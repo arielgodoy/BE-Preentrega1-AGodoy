@@ -11,6 +11,9 @@ const obtenerProductos = async () => {
   const dataFromServer = await new Promise(resolve => {
     socket.on('resultado.getproducts', data => resolve(data));
   });
+
+
+
   // Limpia la tabla antes de agregar los nuevos datos
   dataTable.clear().draw();
   // Agrega filas al DataTable basándote en los datos del WebSocket
@@ -66,3 +69,6 @@ obtenerProductos();
     socket.emit('eliminaProducto', productData, handleResult);
   }
   
+  socket.on('productosactualizados', data => {
+    obtenerProductos();
+  });
