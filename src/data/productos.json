@@ -1,24 +1,46 @@
-[  
+[
   {
-    "id": 2023112609,
-    "title": "Nuevo nombre de producto2",
-    "description": "Nueva descripción",
-    "code": "NEWCODE3",
-    "price": 29.99,
-    "status": true,
-    "stock": 75,
-    "category": "nueva categoria",
-    "thumbnail": "nueva_imagen.jpg"
+    "id": 2039,
+    "title": "1",
+    "description": "1",
+    "code": "1",
+    "price": "1",
+    "status": "available",
+    "stock": "1",
+    "category": "1",
+    "thumbnail": "1"
   },
   {
-    "id": 2023112606,
-    "title": "Nuevo nombre de producto2",
-    "description": "Nueva descripción",
-    "code": "NEWCODE6",
-    "price": 29.99,
-    "status": true,
-    "stock": 75,
-    "category": "nueva categoria",
-    "thumbnail": "nueva_imagen.jpg"
+    "id": 2040,
+    "title": "1",
+    "description": "1",
+    "code": "2",
+    "price": "1",
+    "status": "available",
+    "stock": "1",
+    "category": "1",
+    "thumbnail": "1"
+  },
+  {
+    "id": 2041,
+    "title": "1",
+    "description": "1",
+    "code": "3",
+    "price": "1",
+    "status": "available",
+    "stock": "1",
+    "category": "1",
+    "thumbnail": "1"
+  },
+  {
+    "id": 2042,
+    "title": "1",
+    "description": "1",
+    "code": "4",
+    "price": "1",
+    "status": "available",
+    "stock": "1",
+    "category": "1",
+    "thumbnail": "1"
   }
 ]

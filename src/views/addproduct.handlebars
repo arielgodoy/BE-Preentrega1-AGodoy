@@ -1,21 +1,14 @@
-{{#if user}}
-  <div class="container text-left mt-4">
-    <form action="/login" method="post">
-      <div class="col-md-4 offset-md-4">
-        <label for="username" class="form-label">Usuario:</label>
-        <input type="text" class="form-control" id="username" name="username" required>
-      </div>
+{{> forminputprod }}  
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/addproducts.js" defer></script>
 
-      <div class="col-md-4 offset-md-4">
-        <label for="password" class="form-label">Contraseña:</label>
-        <input type="password" class="form-control" id="password" name="password" required>
-      </div>
-      <div class="col-md-4 offset-md-4">
-      <button type="submit" class="btn btn-primary">Iniciar sesión</button>
-      </div>
-    </form>
-  </div>
-{{else}}
-{{> forminputprod }}
 
-{{/if}}
+
+
+
+
+
+
+
+
+

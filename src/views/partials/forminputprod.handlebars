@@ -1,6 +1,7 @@
 <!-- Formulario HTML con estilos de Bootstrap 5.3 -->
-<form class="container mt-5" action="/addproduct" method="post">
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
+<form class="container mt-5" action="/product/add" method="post">
   <div class="col-md-4 text-center offset-md-4">
     <h1>Ingreso de Productos</h1>
   </div>
@@ -48,7 +49,10 @@
     <input type="text" class="form-control" id="thumbnail" name="thumbnail" required>
   </div>
   <div class="mb-4 col-md-4 text-center offset-md-4 ">
-    <br>
-  <button type="submit" class="btn btn-primary">Agregar Producto</button>
+    <br>  
+  <button id="agregarProductoBtn" type="submit" class="btn btn-primary">Agregar Producto</button>
+  </div>
+  <div class="mb-4 col-md-4 text-center offset-md-4 ">
+  <span id="result"></span>
   </div>
 </form>
